@@ -25,7 +25,7 @@ const Upload = () => {
         const formData = new FormData();
         formData.append('image', selectedFile);
 
-        preview.setAttribute('src',"");
+        preview.setAttribute('src',"./src/assets/loading1.gif");
 
         try {
             const response = await axios.post('https://bg-backend-tu8q.onrender.com/remove-bg', formData, {
